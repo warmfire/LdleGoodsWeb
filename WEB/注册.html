@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+<meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<title>ILLUSION&mdash;&mdash;闲置物品交流网</title>
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div id="nhead">
+        <div id="nheader">
+            <div id="nzuoshang">
+                <div id="nap3">
+                    <p>ILLUSION</p>
+                </div>
+            </div>
+            <div id="nyoushang">
+              <div id="ndaohang">
+                    <object type="application/x-shockwave-flash" data="swf/daohang7.swf" width="700" height="100">
+                    </object>
+              </div>
+            </div>
+        </div>
+    </div>
+       	<div id="midden">
+            <div id="azzuo">
+                <p id="ap5">Register</p>
+            </div>
+            <div id="templatemo_slider">
+                  <div style="width:700px;height:200px;position:relative;left:-200px;" id="dituContent"></div>
+                <script type="text/javascript">
+                    function initMap(){
+                        createMap();//创建地图
+                        setMapEvent();//设置地图事件
+                        addMapControl();//向地图添加控件
+                    }
+                    
+                    //创建地图函数：
+                    function createMap(){
+                        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                        var point = new BMap.Point(120.697878,27.923225);//定义一个中心点坐标
+                        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+                        window.map = map;//将map变量存储在全局
+                    }
+                    
+                    //地图事件设置函数：
+                    function setMapEvent(){
+                        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                        map.enableKeyboard();//启用键盘上下左右键移动地图
+                    }
+                    
+                    //地图控件添加函数：
+                    function addMapControl(){
+                        //向地图中添加缩放控件
+                    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                    map.addControl(ctrl_nav);
+                        //向地图中添加缩略图控件
+                    var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:0});
+                    map.addControl(ctrl_ove);
+                        //向地图中添加比例尺控件
+                    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                    map.addControl(ctrl_sca);
+                    }
+                    
+                    
+                    initMap();//创建和初始化地图
+                </script>
+            </div>
+        </div>
+        <div id="rmidden">
+            <div id="rmiddenz"> 
+            	<div id="rms">
+                	<div id="rms1">
+                     	<p>Contant</p>
+                    </div>
+                    <div>
+                    	<div id="rms2">
+                        	<p>15158715552</p>
+                            <p>15158715698</p>
+                            <p>15158715488<p>
+                        </div>
+                        <div id="rms3">
+                        	<p>wh747257503</p>
+                        </div>
+                        <div id="rms4">
+                        	<p>747257503</p>
+                            <p>@qq.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="rmx">
+                	<div id="rms1">
+                    	<p>Address</p>
+                    </div>
+                    <div id="rms5">
+                    	<p>浙江省温州市瓯海区</p>
+						<p>茶山街道温州大学城</p>
+                    </div>
+                </div>     	
+            </div>
+            <div id="rmiddeny">
+            	<div id="rz">
+                    <div id="rmzs">
+                        <p id="rp1">注册</p>
+                        <p id="rp2">用户名</p>
+                        <textarea>
+                        </textarea>
+                    </div>
+                    <div id="rmys">
+                    	<object type="application/x-shockwave-flash" data="swf/zhuce.swf" width="212" height="86">
+                  		</object>
+                  </div>
+                    <div id="rmzz">
+                        <p id="rp2">密码</p>
+                        <textarea>
+                        </textarea>
+                    </div>
+                    <div id="rmzy">
+                        <p id="rp2">确认密码</p>
+                        <textarea>
+                        </textarea>
+                    </div>
+                    <div id="rmx1">
+                        <p id="rp2">个性签名</p>
+                        <textarea id="gxqm">
+                        </textarea>
+                        <div id="rb">
+                        	<input type="submit" />
+                            <input type="reset" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="afoot">
+    	<div id="afooter">
+            <div id="ap7">
+            	<p>ILLUSION</p>
+            </div>
+            <div id="ap8">
+            	<p>网络文化经营许可证：浙网文[2015]0526-526号</p><p>浙-2015-2015&copy; 2015-2015 ILLUSION 版权所有</p>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+    </script>
+</body>
+</html>
